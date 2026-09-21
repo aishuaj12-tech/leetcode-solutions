@@ -1,6 +1,6 @@
 ## Problem: Two Sum (Easy)
 
-**Link:** Paste the Two Sum LeetCode URL here.
+**Link:** https://leetcode.com/problems/two-sum
 
 ### Approach
 
