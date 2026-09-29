@@ -1,7 +1,7 @@
 # LeetCode Solutions
 
-**Name:** Aishwarya H K
-**Roll Number:** R25EF015
+**Name:** Aishwarya A J 
+**Roll Number:** R25EF016
 
 Personal LeetCode practice log — part of B25GE0101 portfolio
 
