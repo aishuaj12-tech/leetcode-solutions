@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aishwarya A J | 3rd Semester Computer Science & Engineering Portfolio</title>
+  <meta name="description" content="Personal portfolio of Aishwarya A J, 3rd Semester Computer Science and Engineering student. Showcasing technical skills, academic activities, LeetCode solutions repository, and learning goals.">
+  <meta name="keywords" content="Aishwarya A J, Computer Science and Engineering, 3rd Semester, Portfolio, C Programming, Java, Data Structures, SQL, MySQL, Git, GitHub, LeetCode">
+  <meta name="author" content="Aishwarya A J">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Ambient Light Backdrops -->
+  <div class="ambient-glow glow-primary" aria-hidden="true"></div>
+  <div class="ambient-glow glow-secondary" aria-hidden="true"></div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-brand" id="brand-logo" aria-label="Aishwarya A J - Home">
+        <div class="brand-avatar" aria-hidden="true">AJ</div>
+        <div class="brand-meta">
+          <span class="brand-name">Aishwarya A J</span>
+          <span class="brand-sub">3rd Sem &bull; CSE</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link" id="nav-link-home">Home</a></li>
+          <li><a href="#about" class="nav-link" id="nav-link-about">About</a></li>
+          <li><a href="#skills" class="nav-link" id="nav-link-skills">Skills</a></li>
+          <li><a href="#projects" class="nav-link" id="nav-link-projects">Projects</a></li>
+          <li><a href="#activities" class="nav-link" id="nav-link-activities">Activities</a></li>
+          <li><a href="#github-leetcode" class="nav-link" id="nav-link-hub">GitHub &amp; LeetCode</a></li>
+          <li><a href="#learning-goals" class="nav-link" id="nav-link-goals">Goals</a></li>
+          <li><a href="#contact" class="nav-link" id="nav-link-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme Switcher & GitHub Quick Link) -->
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark and light theme" title="Toggle theme">
+          <span class="icon icon-sun" id="theme-toggle-icon" aria-hidden="true"></span>
+        </button>
+
+        <a href="https://github.com/aishuaj12-tech/leetcode-solutions" target="_blank" rel="noopener noreferrer" class="btn-github-nav" id="nav-btn-github" title="Visit GitHub Repository">
+          <span class="icon icon-github icon-sm" aria-hidden="true"></span>
+          <span>GitHub</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="icon icon-menu" id="menu-toggle-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- 1. HOME / HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge-wrap reveal">
+            <div class="badge" id="hero-badge">
+              <span class="badge-dot"></span>
+              3rd Semester | Computer Science and Engineering
+            </div>
+          </div>
+
+          <h1 class="hero-title reveal delay-1">
+            Hi, I'm <span class="gradient-text">Aishwarya A J</span>
+          </h1>
+
+          <p class="hero-lead reveal delay-2">
+            Aspiring Computer Science and Engineering student passionate about learning programming, strengthening problem-solving skills, and building a solid foundation in data structures, databases, and software development.
+          </p>
+
+          <div class="hero-actions reveal delay-3">
+            <a href="#projects" class="btn btn-primary" id="hero-btn-projects">
+              <span>View Projects</span>
+              <span class="icon icon-arrow-right icon-sm" aria-hidden="true"></span>
+            </a>
+            <a href="https://github.com/aishuaj12-tech/leetcode-solutions" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="hero-btn-github">
+              <span class="icon icon-github icon-sm" aria-hidden="true"></span>
+              <span>View GitHub</span>
+            </a>
+          </div>
+
+          <!-- Academic Highlights Stats Grid -->
+          <div class="hero-stats-grid reveal delay-4">
+            <div class="hero-stat-card">
+              <div class="hero-stat-value">3rd Sem</div>
+              <div class="hero-stat-label">Computer Science &amp; Engg.</div>
+            </div>
+            <div class="hero-stat-card">
+              <div class="hero-stat-value">LeetCode</div>
+              <div class="hero-stat-label">Organized Practice Repo</div>
+            </div>
+            <div class="hero-stat-card">
+              <div class="hero-stat-value">8+ Skills</div>
+              <div class="hero-stat-label">Programming, DSA &amp; Web</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="badge">Background</div>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-desc">Get to know my academic path, foundational interests, and dedication to computer science.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: About Me Overview Card -->
+          <article class="glass-card reveal delay-1" id="about-card-left">
+            <div class="card-top-icon" aria-hidden="true">
+              <span class="icon icon-user icon-lg icon-primary" aria-hidden="true"></span>
+            </div>
+            <h3 class="card-title">Computer Science Student</h3>
+            <p class="about-text">
+              I am a third-semester Computer Science and Engineering student developing my skills in programming, problem-solving, and software development. I am actively learning C, Java, Data Structures, SQL/MySQL, database concepts, web development fundamentals (HTML, CSS, JavaScript), and essential developer tools like Git and GitHub through my academic coursework and hands-on coding practice.
+            </p>
+
+            <div class="meta-pills-list">
+              <div class="meta-pill-item">
+                <span class="meta-pill-label">Name</span>
+                <span class="meta-pill-val">Aishwarya A J</span>
+              </div>
+              <div class="meta-pill-item">
+                <span class="meta-pill-label">Semester</span>
+                <span class="meta-pill-val">3rd Semester</span>
+              </div>
+              <div class="meta-pill-item">
+                <span class="meta-pill-label">Branch</span>
+                <span class="meta-pill-val">Computer Science and Engineering</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Right: Key Academic Focus Areas Card -->
+          <article class="glass-card about-highlights-card reveal delay-2" id="about-card-right">
+            <div>
+              <div class="card-top-icon" style="background: rgba(6, 182, 212, 0.15); color: var(--secondary);" aria-hidden="true">
+                <span class="icon icon-graduation icon-lg icon-secondary" aria-hidden="true"></span>
+              </div>
+              <h3 class="card-title">Academic &amp; Coding Focus</h3>
+              <p class="about-text" style="margin-bottom: 1rem;">
+                My current focus is building solid computer science fundamentals, writing clean code, and understanding the theoretical and practical dimensions of software:
+              </p>
+            </div>
+
+            <div class="focus-pills-grid">
+              <div class="focus-pill">
+                <span class="icon icon-check icon-secondary" aria-hidden="true"></span>
+                <span>Programming &amp; Problem Solving</span>
+              </div>
+              <div class="focus-pill">
+                <span class="icon icon-check icon-secondary" aria-hidden="true"></span>
+                <span>Data Structures &amp; Algorithms</span>
+              </div>
+              <div class="focus-pill">
+                <span class="icon icon-check icon-secondary" aria-hidden="true"></span>
+                <span>Database Management &amp; SQL</span>
+              </div>
+              <div class="focus-pill">
+                <span class="icon icon-check icon-secondary" aria-hidden="true"></span>
+                <span>Web Development &amp; Version Control</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SKILLS SECTION -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="badge">Toolbox &amp; Technologies</div>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-desc">Relevant programming languages, core concepts, and tools appropriate for a 3rd semester CSE student.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <article class="glass-card skill-category-card reveal delay-1" id="skills-programming">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">
+                <span class="icon icon-code icon-primary" aria-hidden="true"></span>
+              </div>
+              <h3 class="category-title">Programming Languages</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-left">
+                  <div class="skill-icon-badge">C</div>
+                  <span class="skill-name">C Programming</span>
+                </div>
+                <span class="skill-tag">Systems &amp; Logic</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-left">
+                  <div class="skill-icon-badge">Jv</div>
+                  <span class="skill-name">Java</span>
+                </div>
+                <span class="skill-tag">OOP Fundamentals</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Core Concepts & Databases -->
+          <article class="glass-card skill-category-card reveal delay-2" id="skills-concepts">
+            <div class="category-header">
+              <div class="category-icon" style="background: rgba(6, 182, 212, 0.15); color: var(--secondary);" aria-hidden="true">
+                <span class="icon icon-database icon-secondary" aria-hidden="true"></span>
+              </div>
+              <h3 class="category-title">Core Concepts &amp; DB</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-left">
+                  <div class="skill-icon-badge">DS</div>
+                  <span class="skill-name">Data Structures</span>
+                </div>
+                <span class="skill-tag">Problem Solving</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-left">
+                  <div class="skill-icon-badge">SQL</div>
+                  <span class="skill-name">SQL / MySQL</span>
+                </div>
+                <span class="skill-tag">Relational Data</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Web Development & Tools -->
+          <article class="glass-card skill-category-card reveal delay-3" id="skills-web-tools">
+            <div class="category-header">
+              <div class="category-icon" style="background: var(--emerald-light); color: var(--emerald);" aria-hidden="true">
+                <span class="icon icon-tool icon-emerald" aria-hidden="true"></span>
+              </div>
+              <h3 class="category-title">Web &amp; Tools</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-left">
+                  <div class="skill-icon-badge">Git</div>
+                  <span class="skill-name">Git &amp; GitHub</span>
+                </div>
+                <span class="skill-tag">Version Control</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-left">
+                  <div class="skill-icon-badge">UI</div>
+                  <span class="skill-name">HTML &amp; CSS</span>
+                </div>
+                <span class="skill-tag">Web Structuring</span>
+              </div>
+              <div class="skill-item">
+                <div class="skill-left">
+                  <div class="skill-icon-badge">JS</div>
+                  <span class="skill-name">JavaScript</span>
+                </div>
+                <span class="skill-tag">Client-Side Logic</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROJECTS SECTION -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="badge">Practical Implementation</div>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-desc">Hands-on programming repository demonstrating structured problem solving and algorithm analysis.</p>
+        </div>
+
+        <!-- Featured Project: LeetCode Solutions -->
+        <article class="featured-project-card reveal delay-1" id="featured-project">
+          <div class="featured-header">
+            <div>
+              <div class="badge" style="margin-bottom: 0.5rem; background: rgba(99, 102, 241, 0.2);">
+                Featured Project
+              </div>
+              <h3 style="font-size: 1.65rem; color: var(--text-main); margin-bottom: 0.35rem;">
+                LeetCode Solutions Repository
+              </h3>
+            </div>
+            <a href="https://github.com/aishuaj12-tech/leetcode-solutions" target="_blank" rel="noopener noreferrer" class="project-meta-pill" id="project-repo-link" title="Open GitHub Repository">
+              <span class="icon icon-github icon-sm" aria-hidden="true"></span>
+              <span>aishuaj12-tech/leetcode-solutions</span>
+              <span class="icon icon-external-link icon-sm" aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <p class="project-desc">
+            A dedicated GitHub repository created to systematically organize, test, and document solved algorithmic programming problems. The repository contains solved problems organized by topics, with code implementations in C, test cases, problem explanations, time and space complexity analysis, and continuous progress tracking.
+          </p>
+
+          <div class="project-features-grid">
+            <div class="project-feature-item">
+              <span class="icon icon-check icon-emerald" aria-hidden="true"></span>
+              <span>Solved Programming Problems</span>
+            </div>
+            <div class="project-feature-item">
+              <span class="icon icon-check icon-emerald" aria-hidden="true"></span>
+              <span>Organized by Topics</span>
+            </div>
+            <div class="project-feature-item">
+              <span class="icon icon-check icon-emerald" aria-hidden="true"></span>
+              <span>C Code &amp; Test Cases</span>
+            </div>
+            <div class="project-feature-item">
+              <span class="icon icon-check icon-emerald" aria-hidden="true"></span>
+              <span>Problem Explanations</span>
+            </div>
+            <div class="project-feature-item">
+              <span class="icon icon-check icon-emerald" aria-hidden="true"></span>
+              <span>Time &amp; Space Complexity</span>
+            </div>
+            <div class="project-feature-item">
+              <span class="icon icon-check icon-emerald" aria-hidden="true"></span>
+              <span>Learning Progress Tracking</span>
+            </div>
+          </div>
+
+          <div class="project-actions">
+            <a href="https://github.com/aishuaj12-tech/leetcode-solutions" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btn-project-github">
+              <span>View Repository on GitHub</span>
+              <span class="icon icon-external-link icon-sm" aria-hidden="true"></span>
+            </a>
+            <button class="btn btn-secondary btn-copy-repo" data-url="https://github.com/aishuaj12-tech/leetcode-solutions" id="btn-project-copy">
+              <span class="icon icon-copy" id="copy-btn-icon" aria-hidden="true"></span>
+              <span id="copy-btn-text">Copy Repository Link</span>
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 5. ACADEMIC ACTIVITIES SECTION -->
+    <section id="activities">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="badge">Curriculum &amp; Practice</div>
+          <h2 class="section-title">Academic Activities</h2>
+          <p class="section-desc">Key practical activities, development setups, and collaborative tooling practiced during my coursework.</p>
+        </div>
+
+        <div class="activities-grid">
+          <!-- Activity 1 -->
+          <article class="glass-card activity-card reveal delay-1" id="activity-1">
+            <div>
+              <div class="activity-header">
+                <span class="activity-badge">Activity 1</span>
+              </div>
+              <h3 class="activity-title">VS Code Setup</h3>
+              <p class="activity-desc">
+                I set up Visual Studio Code and practiced creating, running, and testing basic programs, mastering terminal execution and debugging workflows.
+              </p>
+            </div>
+            <div class="activity-tags">
+              <span class="activity-tag">VS Code</span>
+              <span class="activity-tag">Environment Setup</span>
+              <span class="activity-tag">Program Testing</span>
+            </div>
+          </article>
+
+          <!-- Activity 2 -->
+          <article class="glass-card activity-card reveal delay-2" id="activity-2">
+            <div>
+              <div class="activity-header">
+                <span class="activity-badge">Activity 2</span>
+              </div>
+              <h3 class="activity-title">Git and GitHub Setup</h3>
+              <p class="activity-desc">
+                I learned the basics of Git and GitHub, including initializing repositories, making meaningful commits, and pushing project files to GitHub.
+              </p>
+            </div>
+            <div class="activity-tags">
+              <span class="activity-tag">Git</span>
+              <span class="activity-tag">GitHub</span>
+              <span class="activity-tag">Commits &amp; Remotes</span>
+            </div>
+          </article>
+
+          <!-- Activity 3 -->
+          <article class="glass-card activity-card reveal delay-1" id="activity-3">
+            <div>
+              <div class="activity-header">
+                <span class="activity-badge">Activity 3</span>
+              </div>
+              <h3 class="activity-title">GitLens and Live Share</h3>
+              <p class="activity-desc">
+                I explored GitLens to understand Git history, line-by-line code changes, and blame annotations, and used Live Share to practice collaborative coding.
+              </p>
+            </div>
+            <div class="activity-tags">
+              <span class="activity-tag">GitLens</span>
+              <span class="activity-tag">Live Share</span>
+              <span class="activity-tag">Collaborative Coding</span>
+            </div>
+          </article>
+
+          <!-- Activity 4 -->
+          <article class="glass-card activity-card reveal delay-2" id="activity-4">
+            <div>
+              <div class="activity-header">
+                <span class="activity-badge">Activity 4</span>
+              </div>
+              <h3 class="activity-title">LeetCode Practice Repository</h3>
+              <p class="activity-desc">
+                I created a GitHub repository to organize my LeetCode solutions. The repository contains C solutions, test cases, problem explanations, time and space complexity, and progress tracking.
+              </p>
+            </div>
+            <div class="activity-tags">
+              <span class="activity-tag">Problem Solving</span>
+              <span class="activity-tag">C Language</span>
+              <span class="activity-tag">Algorithm Complexity</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. GITHUB & LEETCODE SECTION -->
+    <section id="github-leetcode">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="badge">Code Repositories &amp; Practice</div>
+          <h2 class="section-title">GitHub &amp; LeetCode</h2>
+          <p class="section-desc">Centralized access to my version-controlled problem-solving solutions and coding repository.</p>
+        </div>
+
+        <div class="hub-grid">
+          <!-- GitHub Card -->
+          <article class="glass-card hub-card reveal delay-1" id="hub-github-card">
+            <div>
+              <div class="hub-icon github-icon" aria-hidden="true">
+                <span class="icon icon-github icon-lg" aria-hidden="true"></span>
+              </div>
+              <div class="hub-body">
+                <h3>GitHub Practice Repository</h3>
+                <p>
+                  My GitHub repository serves as the central hub for hosting and version-controlling solved programming questions, test scripts, and algorithmic documentation.
+                </p>
+
+                <div class="hub-feature-list">
+                  <div class="hub-feature-item">
+                    <span class="icon icon-check icon-emerald" aria-hidden="true"></span>
+                    <span>Clean commit history and structured directories</span>
+                  </div>
+                  <div class="hub-feature-item">
+                    <span class="icon icon-check icon-emerald" aria-hidden="true"></span>
+                    <span>Regular solution updates and code maintenance</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 1.5rem;">
+              <a href="https://github.com/aishuaj12-tech/leetcode-solutions" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="btn-hub-github" style="width: 100%;">
+                <span>Open GitHub Repository</span>
+                <span class="icon icon-external-link icon-sm" aria-hidden="true"></span>
+              </a>
+            </div>
+          </article>
+
+          <!-- LeetCode Problem Solving Overview Card -->
+          <article class="glass-card hub-card reveal delay-2" id="hub-leetcode-card">
+            <div>
+              <div class="hub-icon leetcode-icon" aria-hidden="true">
+                <span class="icon icon-layers icon-lg" style="color: #f59e0b;" aria-hidden="true"></span>
+              </div>
+              <div class="hub-body">
+                <h3>LeetCode Practice Overview</h3>
+                <p>
+                  LeetCode problems are actively practiced and recorded in my GitHub repository. Each solution includes detailed logic, test cases, and time/space complexity notes to build a strong algorithmic mindset.
+                </p>
+
+                <div class="hub-feature-list">
+                  <div class="hub-feature-item">
+                    <span class="icon icon-check icon-emerald" aria-hidden="true"></span>
+                    <span>Categorized by algorithmic topic and data structure</span>
+                  </div>
+                  <div class="hub-feature-item">
+                    <span class="icon icon-check icon-emerald" aria-hidden="true"></span>
+                    <span>Includes sample inputs, edge cases, and explanations</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 1.5rem;">
+              <a href="https://github.com/aishuaj12-tech/leetcode-solutions" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="btn-hub-leetcode" style="width: 100%;">
+                <span>Explore Solutions in Repository</span>
+                <span class="icon icon-arrow-right icon-sm" aria-hidden="true"></span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. LEARNING GOALS SECTION -->
+    <section id="learning-goals">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="badge">Growth &amp; Objectives</div>
+          <h2 class="section-title">Learning Goals</h2>
+          <p class="section-desc">My realistic objectives and learning roadmap as a 3rd semester Computer Science and Engineering student.</p>
+        </div>
+
+        <div class="goals-grid">
+          <!-- Goal 1 -->
+          <article class="goal-card reveal delay-1" id="goal-1">
+            <div class="goal-top">
+              <div class="goal-icon" aria-hidden="true">
+                <span class="icon icon-target icon-primary" aria-hidden="true"></span>
+              </div>
+              <span class="goal-number">01</span>
+            </div>
+            <h3 class="goal-title">Improving Problem-Solving Skills</h3>
+            <p class="goal-desc">
+              Developing a methodical approach to analyzing complex algorithmic problems and formulating structured, step-by-step solutions.
+            </p>
+          </article>
+
+          <!-- Goal 2 -->
+          <article class="goal-card reveal delay-2" id="goal-2">
+            <div class="goal-top">
+              <div class="goal-icon" style="background: rgba(6, 182, 212, 0.15); color: var(--secondary);" aria-hidden="true">
+                <span class="icon icon-layers icon-secondary" aria-hidden="true"></span>
+              </div>
+              <span class="goal-number">02</span>
+            </div>
+            <h3 class="goal-title">Strengthening Data Structures &amp; Algorithms</h3>
+            <p class="goal-desc">
+              Deepening understanding of linear and non-linear data structures, time and space complexity, and fundamental algorithms.
+            </p>
+          </article>
+
+          <!-- Goal 3 -->
+          <article class="goal-card reveal delay-3" id="goal-3">
+            <div class="goal-top">
+              <div class="goal-icon" style="background: var(--emerald-light); color: var(--emerald);" aria-hidden="true">
+                <span class="icon icon-code icon-emerald" aria-hidden="true"></span>
+              </div>
+              <span class="goal-number">03</span>
+            </div>
+            <h3 class="goal-title">Learning Web Development</h3>
+            <p class="goal-desc">
+              Gaining practical knowledge in modern web design, semantics, styling, and client-side scripting with HTML, CSS, and JavaScript.
+            </p>
+          </article>
+
+          <!-- Goal 4 -->
+          <article class="goal-card reveal delay-1" id="goal-4">
+            <div class="goal-top">
+              <div class="goal-icon" aria-hidden="true">
+                <span class="icon icon-database icon-primary" aria-hidden="true"></span>
+              </div>
+              <span class="goal-number">04</span>
+            </div>
+            <h3 class="goal-title">Improving Database Skills</h3>
+            <p class="goal-desc">
+              Writing optimized SQL queries, understanding relational schema design, indexing, and core database management principles.
+            </p>
+          </article>
+
+          <!-- Goal 5 -->
+          <article class="goal-card reveal delay-2" id="goal-5">
+            <div class="goal-top">
+              <div class="goal-icon" style="background: rgba(6, 182, 212, 0.15); color: var(--secondary);" aria-hidden="true">
+                <span class="icon icon-box icon-secondary" aria-hidden="true"></span>
+              </div>
+              <span class="goal-number">05</span>
+            </div>
+            <h3 class="goal-title">Building Practical Projects</h3>
+            <p class="goal-desc">
+              Applying theoretical computer science concepts to build functional, hands-on software and utility projects.
+            </p>
+          </article>
+
+          <!-- Goal 6 -->
+          <article class="goal-card reveal delay-3" id="goal-6">
+            <div class="goal-top">
+              <div class="goal-icon" style="background: var(--emerald-light); color: var(--emerald);" aria-hidden="true">
+                <span class="icon icon-git-branch icon-emerald" aria-hidden="true"></span>
+              </div>
+              <span class="goal-number">06</span>
+            </div>
+            <h3 class="goal-title">Confidence with Git &amp; GitHub</h3>
+            <p class="goal-desc">
+              Mastering version control workflows, repository management, branching, and team collaboration practices.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CONTACT SECTION -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="badge">Get in Touch</div>
+          <h2 class="section-title">Contact</h2>
+          <p class="section-desc">Feel free to connect regarding academic discussions, problem solving, or peer learning.</p>
+        </div>
+
+        <div class="contact-container">
+          <!-- Contact Information Column -->
+          <article class="glass-card reveal delay-1" id="contact-info-card">
+            <div>
+              <h3 class="contact-card-title">Student Profile</h3>
+              <p class="contact-card-desc">
+                I am actively learning, practicing coding, and organizing problem-solving solutions. Feel free to explore my GitHub repository or drop a message here.
+              </p>
+
+              <div class="contact-details-list">
+                <!-- Academic Standing -->
+                <div class="contact-detail-item">
+                  <div class="contact-detail-icon" aria-hidden="true">
+                    <span class="icon icon-graduation icon-primary" aria-hidden="true"></span>
+                  </div>
+                  <div class="contact-detail-text">
+                    <h4>Academic Status</h4>
+                    <p>3rd Semester | Computer Science and Engineering</p>
+                  </div>
+                </div>
+
+                <!-- GitHub Repository -->
+                <div class="contact-detail-item">
+                  <div class="contact-detail-icon" style="background: rgba(6, 182, 212, 0.15); color: var(--secondary);" aria-hidden="true">
+                    <span class="icon icon-github icon-secondary" aria-hidden="true"></span>
+                  </div>
+                  <div class="contact-detail-text">
+                    <h4>GitHub Repository</h4>
+                    <a href="https://github.com/aishuaj12-tech/leetcode-solutions" target="_blank" rel="noopener noreferrer" id="contact-link-github">
+                      github.com/aishuaj12-tech/leetcode-solutions
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style="font-size: 0.85rem; color: var(--text-subtle);">
+              <span>Open to learning discussions &amp; peer problem-solving.</span>
+            </div>
+          </article>
+
+          <!-- Contact Form Column -->
+          <article class="glass-card reveal delay-2" id="contact-form-card">
+            <h3 class="card-title">Send a Message</h3>
+            <form class="contact-form" id="portfolio-contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="Enter your name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email</label>
+                <input type="email" id="contact-email" class="form-control" placeholder="name@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message</label>
+                <textarea id="contact-message" class="form-control" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="btn-submit-message" style="width: 100%;">
+                <span>Send Message</span>
+                <span class="icon icon-send icon-sm" aria-hidden="true"></span>
+              </button>
+
+              <div class="form-status" id="form-status-msg" role="status" aria-live="polite"></div>
+            </form>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="brand-avatar" style="width: 32px; height: 32px; font-size: 0.8rem;">AJ</div>
+          <span class="footer-copy">&copy; 2026 Aishwarya A J. 3rd Semester | Computer Science and Engineering.</span>
+        </div>
+
+        <div>
+          <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top of page">
+            <span>Back to top</span>
+            <span class="icon icon-arrow-up icon-sm" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification for Copy URL -->
+  <div class="toast" id="toast-notification" role="status" aria-live="polite">
+    <span class="icon icon-check icon-emerald" aria-hidden="true"></span>
+    <span id="toast-text">GitHub Repository URL copied to clipboard!</span>
+  </div>
+
+  <!-- External Script -->
+  <script src="./script.js"></script>
+</body>
+</html>
